@@ -1,0 +1,152 @@
+html, body, body * {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+
+    background: linear-gradient(rgba(80,81,79, 0.2), rgb(255,255, 255));
+}
+
+body * {
+    box-sizing: border-box;
+}
+
+#app {
+    width: 80%;
+    height: 100vh;
+
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    background-color: lightred;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    color: rgb(80,81,79);
+    letter-spacing: 2.5px;
+    font-size: 2.1em;
+
+    font-family: 'Coustard', cursive;
+}
+
+.timers {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    color: #666;
+}
+
+h2 {
+    font-size: 0.9em;
+    text-align: center;
+
+    letter-spacing: 3px;
+}
+
+.control {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    font-size: 1.5em;
+}
+
+#session-control, #break-control {
+    padding: 10px;
+    margin: 0 5px;
+}
+span {
+    padding: 5px;
+}
+
+.stopwatch {
+    width: 65%;
+    /* height: 60%; */
+}
+
+#tomato-slice {
+    transform: rotate(137deg);
+    max-height: 100%;
+}
+
+#t-seeds {
+    fill: #DEB841;
+} 
+
+.multimedia {
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.mm-button {
+    max-height: 1.5em;
+    max-width: 1.5em;
+    fill: #BDD358;
+}
+
+/* Custom Colors: */
+/* dark red: #53180F */
+/* light red: #D53349 */
+
+@media only screen and (min-device-width : 320px) {}
+    
+
+@media only screen and (min-device-width : 480px) {
+    h1 {
+        margin: 10% 0;
+    }
+    .timers {
+        padding: 0 15%;
+    }
+    .stopwatch {
+        max-width: 250px;
+    }
+    .multimedia {
+        margin: 4% 0;
+    }
+}
+  
+
+@media only screen and (min-device-width : 768px) {
+    h1 {
+        font-size: 3em;
+        margin: 7% 0;
+    }
+    .timers {
+        padding: 0 15%;
+    }
+    .multimedia {
+        margin: 4% 0;
+    }
+}
+  
+
+@media only screen and (min-width : 992px) {
+    h1 {
+        font-size: 3.3em;
+    }
+    .timers {
+        padding: 0 30%;
+    }
+}
